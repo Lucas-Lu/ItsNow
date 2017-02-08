@@ -1,0 +1,25 @@
+# Site settings
+title: Its Now
+header-img: img/home-bg.jpg
+email: Lucaspoint2@yeah.net
+copyright_name: LucasPoint2/Blog/BUBUBUBU
+description: "Write your site description here. It will be used as your sites meta description as well!"
+baseurl: "/lucaspoint2Blog"
+url: "http://yourdomain.com"
+twitter_username: SBootstrap
+github_username:  lucas-lu
+facebook_username:  StartBootstrap
+email_username:  Lucaspoint2@yeah.net
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
