@@ -1,15 +1,14 @@
 ---
 layout:     post
-title:      "Man must explore, and this is exploration at its greatest"
-subtitle:   "Problems look mighty small from 150 miles up"
-date:       2014-09-24 12:00:00
-author:     "Start Bootstrap"
+title:      "Man must learn, and what about Linq"
+subtitle:   "learn from my workmate what about Linq"
+date:       2017-02-15 22:0:00
+author:     "Lucas Lu"
 header-img: "img/post-bg-06.jpg"
 ---
 
-<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+<p>2014年第一次接触Linq时，对MVC一知半懂，对Linq更难得理解。到了2016重拾MVC，Entity Framework和Linq，是在用ASP.NET开发一年之后，用惯了数据库语句处理各种数据，对Entity Framework，Linq各种不方便，
+不过没事，做项目专治各种不服！</p>
 
 <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
 
