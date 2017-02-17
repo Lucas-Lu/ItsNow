@@ -10,7 +10,7 @@ header-img: "img/post-bg-06.jpg"
 <p>2014年第一次接触Linq时，对MVC一知半懂，对Linq更难得理解。到了2016重拾MVC，Entity Framework和Linq，是在用ASP.NET开发一年之后，用惯了数据库语句处理各种数据，对Entity Framework，Linq各种不方便，
 不过没事，做项目专治各种不服！</p>
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+<p>当我们习惯了使用Linq的时候，就会发现Linq使很多数据操作变得极其简单，最典型的一个例子就是foreach操作。</p>
 
 <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
 
