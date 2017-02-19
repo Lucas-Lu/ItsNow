@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "We should read"
+title:      "Books are the ladder of human progress"
 date:       2015-10-01 12:00:00
 author:     "Lucas Lu"
 header-img: "img/post-bg-02.jpg"

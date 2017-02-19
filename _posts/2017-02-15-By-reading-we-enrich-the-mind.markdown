@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Man must learn, and what about Linq"
+title:      "By reading we enrich the mind, by conversation we polish it"
 subtitle:   "learn from my workmate what about Linq"
 date:       2017-02-15 22:0:00
 author:     "Lucas Lu"
