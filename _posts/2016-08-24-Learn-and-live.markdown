@@ -6,37 +6,16 @@ author:     "Lucas Lu"
 header-img: "img/post-bg-04.jpg"
 ---
 
-<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+<p>毕业踏入社会将近两年，还没能良好的思维习惯和计划性，前段时间反思了下，觉得自己学习阅读的深度和时间还是欠缺很多。赶巧当当网图书打折，于是入了几本一直想看又不敢看(太懒不想啃技术书)的书</p>
 
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+<p>花了将近一个月，断断续续将鲍勃大叔的《代码整洁之道》读完了，抛却了成日在工作、学习、生产上的浮躁，突然感觉到书籍真是人类进步的阶梯啊！</p>
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+<p>如果早日看到这本书，好好领悟其中的精髓在之前的工作中就不会生产那么多自己看了都毫无美感的代码吧。年轻的时候（泛指大学+刚工作）满足于一段运行成功的代码，浑然不管它是多么难懂并且难以维护。
+工作一两年，重复踩着自己挖过的坑N次浑然不知，虽然良好的代码习惯并不能阻止我们踩坑，但是一个上进的程序员怎么能够容忍自己的代码毫无美感而混乱呢？</p>
 
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+<p>一段简洁令人舒服的代码虽然可能会花费我们整理代码的时间，但这就像对玉石的修饰打磨，真正完成的除了赏心悦目之外一定能给自己带来更大的收获。</p>
 
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+<p>因此开帖写一些最近的学习体会。</p>
 
-<h2 class="section-heading">The Final Frontier</h2>
-
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<blockquote>The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-<a href="#">
-    <img src="{{ site.baseurl }}/img/post-sample-image.jpg" alt="Post Sample Image">
-</a>
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+<blockquote>这本书的序言就写到一句话 “Erlighed i sma ting er ikke nogen lille ting. ”（神在细节中）从一开始就告诉我们，代码的整洁并不是我们看了这本书就可以一下子做到的，我们生产的代码总会有拖沓、冗余的地方，因此为了整洁自己的代码，我们需要注意到代码中的每个细节，从细节着手我们才能写出更好的代码。
+关于5S原则：整理、整顿、清楚、清洁、自律。姑且就随手记一下</blockquote>
