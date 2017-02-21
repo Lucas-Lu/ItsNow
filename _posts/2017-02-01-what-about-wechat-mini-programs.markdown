@@ -106,7 +106,8 @@ wx.request({
 
 <blockquote>
 <xmp>
-<input type="number" bindinput="phoneInput" maxlength="13" class="bd-phonenum" placeholder="请输入手机号（无需注册）" value="{{inputValue}}" />
+<input type="number" bindinput="phoneInput" maxlength="13" class="bd-phonenum" 
+placeholder="请输入手机号（无需注册）" value="{{inputValue}}" />
 Page({
     data:{
         inputValue:'input的默认值'   //wxml中会把使用{{inputValue}}的地方的值和这里绑定起来

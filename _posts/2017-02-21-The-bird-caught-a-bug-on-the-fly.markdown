@@ -17,8 +17,10 @@ header-img: "img/post-bg-07.jpg"
 <xmp>
 	SET @StartTime = Convert(varchar(100),GETDATE()-1,23)
 	SET @EndTime = Convert(varchar(100),GETDATE(),23)
-	SET @Sql = 'SELECT cardno,eventtime,doorno from `event` where eventtime> ''' + @StartTime +''' and eventtime<''' + @EndTime  +''''
-	SET @Sql = 'DECLARE ENTRYRECORDS CURSOR FORWORD_ONLY READ_ONLY FOR SELECT *	FROM OPENQUERY([OtherDataSource], ''' + REPLACE(@Sql, '''', '''''') + ''')'
+	SET @Sql = 'SELECT cardno,eventtime,doorno from `event` 
+	where eventtime> ''' + @StartTime +''' and eventtime<''' + @EndTime  +''''
+	SET @Sql = 'DECLARE ENTRYRECORDS CURSOR FORWORD_ONLY READ_ONLY FOR 
+	SELECT * FROM OPENQUERY([OtherDataSource], ''' + REPLACE(@Sql, '''', '''''') + ''')'
 	EXEC(@Sql)
 	OPEN ENTRYRECORDS
 	FETCH ENTRYRECORDS
