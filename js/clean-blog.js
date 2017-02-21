@@ -36,7 +36,7 @@ $(function() {
                 url: "https://formspree.io/lucaspoint2@yeah.net", 
                 method: "POST",
                 data: {message: message},
-                dataType: "json"
+                dataType: "json",
                 cache: false,
                 success: function() {
                     // Success message
