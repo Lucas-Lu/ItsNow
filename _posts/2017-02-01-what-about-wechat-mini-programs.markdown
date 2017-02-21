@@ -4,7 +4,7 @@ title:      "what about wechat mini programs"
 subtitle:   "knowledge points summary"
 date:       2017-02-15 22:0:00
 author:     "Lucas Lu"
-header-img: "img/post-bg-06.jpg"
+header-img: "img/post-bg-05.jpg"
 ---
 
 
@@ -30,7 +30,8 @@ header-img: "img/post-bg-06.jpg"
 在需要使用toast的wxml中添加下面一段代码(因为是fixed定位可以放在任意位置，一般放在页面最底部):</p>
 
 <blockquote>
-view style="display:{{toast?'block':''}}" class="bd-toast"  {{toasttxt}} /view
+<xmp>
+<view style="display:{{toast?'block':''}}" class="bd-toast" > {{toasttxt}} </view>
 
 在对应的.js文件中通过import的方式引入toast方法
 
@@ -42,6 +43,7 @@ import { toastFn } from '../../utils/toastFn';
  *@text toas中显示的文案
  */
 toastFn(_this,[text]);
+</xmp>
 </blockquote>
 
 <h3>3.使用ES6开发提升开发效率</h3>
@@ -62,6 +64,7 @@ toastFn(_this,[text]);
 
 <p>为了便于线下联调和测试。把依赖环境的项通过配置文件的方式管理起来。在需要的地方直接import来引用。如果需要上线的话只需要在这一个文件中打开相应的注释和关闭相应的注释就可以了。
 <blockquote>
+<xmp>
 //qatestaaac测试环境域名
 export let hostName='https://wappass.qatestaaac.baidu.com/';
 
@@ -70,10 +73,12 @@ export let hostName='https://wappass.qatestaaac.baidu.com/';
 
 //产品线配置验证成功后跳转的url
 export let jumpProductUrl = 'https://www.baidu.com/test';
+</xmp>
 </blockquote>
 
 比如说接口的请求都是通过以下的方式来写，达到统一管理测试环境和线上环境的目的：</p>
 <blockquote>
+<xmp>
 import {hostName}  from '../config';
 wx.request({
     //接口请求
@@ -90,6 +95,7 @@ wx.request({
 
         }
     })
+</xmp>
 </blockquote>
 <h3>5.怎么获取表单的数据</h3>
 
@@ -99,7 +105,8 @@ wx.request({
 
 
 <blockquote>
-input type="number" bindinput="phoneInput" maxlength="13" class="bd-phonenum" placeholder="请输入手机号（无需注册）" value="{{inputValue}}" 
+<xmp>
+<input type="number" bindinput="phoneInput" maxlength="13" class="bd-phonenum" placeholder="请输入手机号（无需注册）" value="{{inputValue}}" />
 Page({
     data:{
         inputValue:'input的默认值'   //wxml中会把使用{{inputValue}}的地方的值和这里绑定起来
@@ -115,6 +122,7 @@ Page({
         })
     }
 })
+</xmp>
 </blockquote>
 <p>
 从上面的代码可以了解到为什么基于数据绑定的类MVVM框架火起来的原因。前端一直再谈就是操作DOM影响页面性能。要尽量少的操作DOM。而上面的代码在没有操作的DOM的情况下就完成了获取页面上的数据和更新页面的数据。而且代码更加的简洁。
