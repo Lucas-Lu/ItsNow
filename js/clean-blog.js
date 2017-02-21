@@ -30,15 +30,13 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+            message = "You have received a new message from your website contact form.\n\n" + 
+            "Here are the details:\n\nName: " + name + "\n\nEmail: " + email + "\n\nPhone: " + phone + "\n\nMessage:\n" + message ;
             $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
+                url: "https://formspree.io/lucaspoint2@yeah.net", 
+                method: "POST",
+                data: {message: message},
+                dataType: "json"
                 cache: false,
                 success: function() {
                     // Success message
