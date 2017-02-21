@@ -14,10 +14,10 @@ p {
 }
 
 #cv {
-	width: 90%;
-	max-width: 900px;
+	width: 100%;
+	max-width: 1000px;
 	background: #f3f3f3;
-	margin: 10px auto;
+	margin: 0 auto;
 }
 
 .mainDetails {
