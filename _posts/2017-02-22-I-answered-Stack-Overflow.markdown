@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Today I answered Stack Overflow"
+title:      "I answered Stack Overflow"
 subtitle:   "Then I got a disagree"
 date:       2017-02-22 22:00:00
 author:     "Lucas Lu"
