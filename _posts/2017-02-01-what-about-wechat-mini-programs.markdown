@@ -104,8 +104,9 @@ wx.request({
 
 
 <blockquote>
-<pre>
+<xmp>
 <input type="number" bindinput="phoneInput" maxlength="13" class="bd-phonenum" 
+
 placeholder="请输入手机号（无需注册）" value="{{inputValue}}" />
 Page({
     data:{
@@ -122,7 +123,7 @@ Page({
         })
     }
 })
-</pre>
+</xmp>
 </blockquote>
 <p>
 从上面的代码可以了解到为什么基于数据绑定的类MVVM框架火起来的原因。前端一直再谈就是操作DOM影响页面性能。要尽量少的操作DOM。而上面的代码在没有操作的DOM的情况下就完成了获取页面上的数据和更新页面的数据。而且代码更加的简洁。
