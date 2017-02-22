@@ -17,7 +17,7 @@ header-img: "img/post-bg-07.jpg"
 SET @StartTime = Convert(varchar(100),GETDATE()-1,23)
 SET @EndTime = Convert(varchar(100),GETDATE(),23)
 SET @Sql = 'SELECT cardno,eventtime,doorno from `event` 
-where eventtime> ''' + @StartTime +''' and eventtime<''' + @EndTime  +''''
+where eventtime BETWEEN ''' + @StartTime +''' AND ''' + @EndTime  +''''
 SET @Sql = 'DECLARE ENTRYRECORDS CURSOR FORWORD_ONLY READ_ONLY FOR 
 SELECT * FROM OPENQUERY([OtherDataSource], ''' + REPLACE(@Sql, '''', '''''') + ''')'
 EXEC(@Sql)
