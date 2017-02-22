@@ -2,7 +2,7 @@
 layout:     post
 title:      "The bird caught a bug on the fly"
 subtitle:   "Review knowledge about CURSOR"
-date:       2017-02-21 22:0:00
+date:       2017-02-21 22:00:00
 author:     "Lucas Lu"
 header-img: "img/post-bg-07.jpg"
 ---
