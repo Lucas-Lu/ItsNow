@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "I am coming back."
+title:      "Do not lose hope."
 subtitle:   "关于Linux安装mysql等"
 date:       2017-10-24 23:00:00
 author:     "Lucas Lu"
@@ -11,79 +11,31 @@ header-img: "img/post-bg-11.jpg"
 
 	言归正传，最近买了一年的VPS当然是linux，尝试着安装了一下mysql，遇到了一些问题，在这里暂且记录一下。</p>
 
-<p>首先码一下概念，由于客户类只依赖于服务类的一个接口，而不依赖于具体的服务类，所以客户类只需要定一个注入点。而在程序运行的过程中，客户类不直接实例化具体服务类，
-而是客户运行上下文环境或者其他组件比如说工厂类，然后将其注入到客户类中，保证客户类的正常运行。</p>
+<p>首先按照apt命令语句从网络安装mysql：
 
-<p>依赖注入的主要类型有Setter注入、构造器注入、依赖获取等。嗯，就着代码解释：</p>
+<b> apt-get install mysql-server </b>。
 
-<font style="color:green">//定义注入客户类的接口</font>
-<pre>
-public interface IEat{
-    string eat();
-}
-</pre>
+如果无法检索到包可以先尝试通过<b>apt-get update</b>更新源，再次安装仍旧报错可能是源的问题可以尝试更换成淘宝的源。</p>
 
-<font style="color:green">//定义接口的实现类</font>
-<pre>
-internal sealed class CarnivoresEat:IEat{
-    public string eat(){
-        return "eat meat";
-    }
-}
+<p>如果网络安装失败可以通过oracle官网进行下载安装，选择对应的版本通过ssh导入linux解压安装，如果提示libaio不存在，则先安装libaio，最后安装成功。</p>
 
-internal sealed class HerbivoreEat:IEat{
-    public string eat(){
-        return "eat vegetable";
-    }
-}
-</pre>
+<p>安装流程如下：
 
+进入安装mysql软件目录：执行命令 cd /usr/local/mysql
 
-<font style="color:green">//定义客户类</font>
-<pre>
-public class Animal{
-    public Animal(string name){
-        this.name = name;
-    }
-    public IEat eat;
-    protected string name;
-    public void haveMeal(){
-        console.write(name + eat.eat());
-    }
-}
-</pre>
+修改当前目录拥有者为mysql用户：执行命令 chown -R mysql:mysql ./
 
-<font style="color:green">//主函数通过給客户类的接口赋值，实现客户类接口的注入，这种注入叫Setter注入。</font>
-<pre>
-void main(){
-    var tiger = new Animal("tiger");
-    tiger.eat = new CarnivoresEat();
-    tiger.haveMeal();
-}
-</pre>
+安装数据库：执行命令 ./scripts/mysql_install_db --user=mysql
 
-<p>至于构造器注入其实就是换一个注入点，通过构造函数的时候就直接注入接口实现类。如下：</p>
+修改当前目录拥有者为root用户：执行命令 chown -R root:root ./
 
-<font style="color:green">//修改客户类</font>
-<pre>
-public class Animal{
-    public Animal(string name，IEat eat){
-        this.name = name;
-        this._eat = eat;
-    }
-    public IEat _eat;
-    protected string name;
-    public void haveMeal(){
-        console.write(name + _eat.eat());
-    }
-}
+修改当前data目录拥有者为mysql用户：执行命令 chown -R mysql:mysql data
 
-void main(){
-    var = new CarnivoresEat();
-    var tiger = new Animal("tiger",eat);
-    tiger.haveMeal();
-}
-</pre>
+到此数据库安装完毕
+</p>
 
-<p></p>
+<p>
+安装完可以输入mysql -uroot -p，然后enter password来进入mysql。
 
+进去后可以使用mysql的各种语法。
+</p>
